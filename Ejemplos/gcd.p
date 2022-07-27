@@ -1,11 +1,11 @@
 /*
-  The greatest common divisor of two values,
-  using Euclides' algorithm .
+  El máximo común divisor de dos valores,
+  usando el algoritmo de Euclide
 */
 
 main()
     {
-    print "Input two values\n"
+    print "Digita dos valores\n"
     new a = getvalue()
     new b = getvalue()
     while (a != b)
@@ -13,5 +13,5 @@ main()
             a = a - b
         else
             b = b - a
-    printf "The greatest common divisor is %d\n", a
+    printf "El máximo común divisor es %d\n", a
     }

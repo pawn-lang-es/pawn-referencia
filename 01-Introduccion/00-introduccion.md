@@ -78,4 +78,4 @@ no la requieren o no la proporcionan.
 
 > [Regresar a la página anterior](../README.md) (Índice)
 >
-> [Ir a la siguiente página...](01-aritmetica-y-expresiones.md) (Aritmética y expresiones)
+> [Ir a la siguiente página](01-aritmetica-y-expresiones.md) (Aritmética y expresiones)

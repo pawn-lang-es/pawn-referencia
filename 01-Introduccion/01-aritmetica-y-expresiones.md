@@ -2,16 +2,17 @@
 Un aspecto fundamental en la mayoría de los programas son los cálculos, las decisiones (ejecución condicional), las iteraciones (bucles) y las variables
 para almacenar los datos de entrada, los de salida y los resultados intermedios. El
 siguiente ejemplo ilustra muchos de estos conceptos. El programa
-programa calcula el máximo común divisor de dos valores
+calcula el máximo común divisor de dos valores
 utilizando un algoritmo inventado por Euclides.
 
+<sub>DISPONIBLE EN: gcd.p</sub>
 ```pawn
 /*
     El máximo común divisor de dos valores,
     usando el algoritmo de Euclides.
 */
 main ()
-{
+    {
     print "Digita dos valores\n"
     new a = getvalue()
     new b = getvalue()
@@ -21,7 +22,7 @@ main ()
         else
             b = b - a
     printf "El máximo común divisor es %d\n", a
-}
+    }
 ```
 
 La función `main` ahora contiene más que una sola sentencia "`print`". Cuando el cuerpo de una función contiene más de una sentencia, éstas deben ir entre llaves -los caracteres "`{`"
@@ -47,11 +48,11 @@ la "falsa".
 
 Observe que algunas sentencias, como `while` e `if`-`else`, contienen
 (o "se despliegan alrededor de") otra instrucción -en el caso de `if`-`else`
-incluso otras dos instrucciones más. El paquete completo es, de nuevo, una
+incluso otras dos instrucciones más. El paquete completo es, de nuevo,
 una sola instrucción. Es decir:
 
 - las sentencias de asignación "`a = a - b`" debajo del `if` y "`b = b - a`" debajo del `else` son sentencias;
-- la sentencia `if`-`else` se pliega alrededor de estas dos asignaciones y forma una única sentencia de sí misma;
+- la sentencia `if`-`else` se pliega alrededor de estas dos asignaciones y forma una única sentencia en sí misma;
 - la sentencia `while` se pliega alrededor de la sentencia `if`-`else` y
 forma, de nuevo, una única sentencia.
 
@@ -68,20 +69,20 @@ ha hecho en el ejemplo anterior.
 La llamada a `printf`, cerca de la parte inferior del ejemplo, difiere de
 la llamada a `print` justo debajo de la llave de apertura ("{"). La "f" en
 `printf` significa "formateado", lo que quiere decir que la función
-puede formatear e imprimir valores numéricos y otros datos (en un formato especificado por el usuario), así como texto literal. El símbolo `%d` en la cadena
+puede formatear e imprimir valores numéricos y otros datos (en un formato especificado por el usuario), así como texto literal. El símbolo `%d` en la cadena de caracteres
 es un token que indica la posición y el formato que
 debe imprimir el siguiente argumento de la función `printf`.
 En tiempo de ejecución, el token `%d` se sustituye por el valor de la variable "a"
 (el segundo argumento de `printf`).
 La función `print` sólo puede imprimir texto; es más rápida que `printf`. Si
-quieres imprimir un literal "`%`" en la pantalla, tienes que usar
+quieres imprimir un literal `%` en la pantalla, tienes que usar
 `print`, o tienes que duplicarlo en el texo que le das a
-`printf`. Es decir
-```
+`printf`. Es decir:
+```pawn
 print "El 20% del personal representa el 80% de los gastos\n"
 ```
 y
-```
+```pawn
 printf "El 20%% del personal representa el 80%% de los gastos\n"
 ```
 imprimen la misma cadena.
@@ -90,3 +91,5 @@ imprimen la misma cadena.
 > [Regresar a la página anterior](00-introduccion.md) (Introducción)
 >
 > [Ir a la siguiente página](02-arreglos-y-constantes.md) (Arreglos y constantes)
+>
+> <sub>[Subir al principio de esta página](#aritmética-y-expresiones)</sub>
