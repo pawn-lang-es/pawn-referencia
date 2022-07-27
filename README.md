@@ -5,7 +5,7 @@ Encontrarás la referencia del lenguaje Pawn oficial traducida al español.
 
 ## Índice
 
- - [Un tutorial de introducción](01-Introduccion/)
+ - [Introducción](01-Introduccion/00-introduccion.md)
  - [Datos y declaraciones]()
  - [Funciones]()
  - [El pre-procesador]()
