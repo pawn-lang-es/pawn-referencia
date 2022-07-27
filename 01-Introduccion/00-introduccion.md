@@ -56,7 +56,7 @@ opcionales.
 
 Como apunte, los pocos puntos anteriores se refieren a sintaxis **opcionales**. Usted elige la sintaxis que desea utilizar: ningún estilo es
 es "obsoleto" o "preferido". Los ejemplos de este manual colocan las llaves y utilizan una sangría que se conoce como el
-"estilo Whitesmith", pero PAWN es un lenguaje de formato libre y
+"[estilo Whitesmith](https://en.wikipedia.org/wiki/Indentation_style#Whitesmiths_style)", pero PAWN es un lenguaje de formato libre y
 otros estilos de sangría son igual de buenos.
 
 Debido a que PAWN está diseñado para ser un lenguaje de extensión para aplicaciones, el conjunto de funciones/librerías que un programa PAWN tiene a su disposición depende de la aplicación anfitriona. Como resultado, el lenguaje PAWN
@@ -76,3 +76,6 @@ columnas de la pantalla. Los programas de ejemplo de este manual
 no utilizan las funciones de consola, porque muchas plataformas 
 no la requieren o no la proporcionan.
 
+> [Regresar a la página anterior](../README.md) (Índice)
+>
+> [Ir a la siguiente página...](01-aritmetica-y-expresiones.md) (Aritmética y expresiones)
