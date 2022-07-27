@@ -22,8 +22,11 @@ El lenguaje Pawn permite separar el código en diferentes módulos que pueden in
 ## Gamemode 
 > También conocido como:
 > Modo de juego, modo o modalidad
+## *Parser*
+## Sangría
 ## *Script* 
 ## *Scripter* 
+## Secuencia de escape
 ## Sentencia 
 > También conocido como:
 > Statement 
@@ -34,6 +37,9 @@ El lenguaje Pawn permite separar el código en diferentes módulos que pueden in
 Se entiende como sintaxis al conjunto de reglas del lenguaje que indican el orden de las palabras para que estas tengan sentido. Si digo `Comí me ayer manzana una` no tendría sentido porque la sintaxis correcta es `Ayer me comí una manzana`. Del mismo modo, Pawn indica la sintaxis para escribir código que el compilador pueda entender. 
 > También conocido como:
 > *General Syntax*
+## String
+> También conocido como:
+> Cadena de caracteres o texto
 ## Macro
 
 ## Módulo (de modularización)

@@ -1,8 +1,6 @@
 # Introduccion
 
-PAWN es un lenguaje de programación sencillo con una sintaxis que se asemeja al lenguaje de programación "C". Un programa PAWN consta de un conjunto de funciones y un conjunto de variables. Las variables
-son objetos de datos y las funciones contienen instrucciones (llamadas "sentencias") que operan sobre los objetos de datos o que realizan
-tareas.
+PAWN es un lenguaje de programación sencillo con una [sintaxis](https://github.com/pawn-lang-es/pawn-referencia/blob/main/terminologia.md#sintaxis) que se asemeja al lenguaje de programación "C". Un programa PAWN consta de un conjunto de funciones y un conjunto de variables. Las variables son objetos de datos y las funciones contienen instrucciones (llamadas "[sentencias](https://github.com/pawn-lang-es/pawn-referencia/blob/main/terminologia.md#sentencia)") que operan sobre los objetos de datos o que realizan tareas.
 
 El primer programa en casi cada lenguaje de programacion es el que imprime un texto simple; "Hola mundo" es un ejemplo clásico. En PAWN, luciría como[^1]:
 
@@ -26,12 +24,9 @@ aparecen entre los paréntesis. La función `main`
 no lleva paréntesis. Las reglas son diferentes para una invocación de función (o una llamada de función); los paréntesis son opcionales en
 la llamada a la función `print`.
 
-El único argumento de la función `print` es una cadena de caracteres[^2], que debe ir entre comillas dobles. Los caracteres `\n` cerca del final de
-la cadena forman una secuencia de escape[^3], en este caso indican un símbolo de "nueva línea". Cuando `print` encuentra la secuencia de escape de nueva línea, avanza el cursor a la primera columna de la siguiente
-línea. Hay que utilizar la secuencia de escape `\n` para insertar una "nueva línea" en la cadena, porque una cadena no puede envolver varias líneas.
-
-[^2]: Cadenas de caracteres literales: [Incluir referencia]()
-[^3]: Secuencias de escape: [Incluir referencia]()
+El único argumento de la función `print` es una [cadena de caracteres](), que debe ir entre comillas dobles. Los caracteres `\n` cerca del final de
+la cadena forman una [secuencia de escape](), en este caso indican un símbolo de "nueva línea". Cuando `print` encuentra la [secuencias de escape]() de nueva línea, avanza el cursor a la primera columna de la siguiente
+línea. Hay que utilizar la [secuencias de escape]() `\n` para insertar una "nueva línea" en la cadena, porque una cadena no puede envolver varias líneas.
 
 PAWN es un lenguaje "sensible a las mayúsculas": las mayúsculas y las minúsculas se consideran letras diferentes. Sería un error
 escribir la función `printf` en el ejemplo anterior como "PrintF". Las palabras clave y los símbolos predefinidos, como el nombre de la función `main`, deben escribirse en minúsculas.
@@ -66,11 +61,11 @@ otros estilos de sangría son igual de buenos.
 
 Debido a que PAWN está diseñado para ser un lenguaje de extensión para aplicaciones, el conjunto de funciones/librerías que un programa PAWN tiene a su disposición depende de la aplicación anfitriona. Como resultado, el lenguaje PAWN
 no tiene conocimiento en sí de ninguna función. La función  `print`, utilizada en este primer ejemplo, debe ser puesta a disposición por
-la aplicación anfitriona y ser "declarada" al analizador sintáctico (*parser*) de PAWN[^4].
+la aplicación anfitriona y ser "declarada" al analizador sintáctico (*[parser]()*) de PAWN[^2].
 Se asume, sin embargo, que todas las aplicaciones anfitrionas proporcionan un mínimo
 conjunto de funciones comunes, como `print` y `printf`.
 
-[^4]: En la especificación del lenguaje, el término "analizador sintáctico" (*parser* en inglés) se refiere a cualquier implementación que procese y ejecute programas Pawn conformes, ya sean intérpretes o compiladores.
+[^2]: En la especificación del lenguaje, el término "analizador sintáctico" (*parser* en inglés) se refiere a cualquier implementación que procese y ejecute programas Pawn conformes, ya sean intérpretes o [compiladores](https://github.com/pawn-lang-es/pawn-referencia/blob/main/terminologia.md#compilador).
 
 En algunos entornos, la pantalla o el terminal deben estar habilitados
 antes de que cualquier texto pueda ser emitido en él. Si este es el caso, usted
