@@ -1,14 +1,14 @@
-/* Simple encryption, using ROT13 */
+/* Cifrado simple, usando ROT13 */
 
 main()
     {
-    printf "Please type the string to mangle: "
+    printf "Por favor escriba el texto para cifrar: "
 
     new str[100]
     getstring str, sizeof str
     rot13 str
 
-    printf "After mangling, the string is: \"%s\"\n", str
+    printf "Después de cifrado, el texto es: \"%s\"\n", str
     }
 
 rot13(string[])

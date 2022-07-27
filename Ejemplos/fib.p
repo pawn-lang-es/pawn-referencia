@@ -1,14 +1,14 @@
-/* Calculation of Fibonacci numbers by iteration */
+/* Cálculo de números de fibonacci por iteración */
 
 main()
     {
-    print "Enter a value: "
+    print "Ingrese un valor: "
     new v = getvalue()
     if (v > 0)
-        printf "The value of Fibonacci number %d is %d\n",
+        printf "El valor del número de fibonacci %d es %d\n",
                v, fibonacci(v)
     else
-        printf "The Fibonacci number %d does not exist\n", v
+        printf "El número de fibonacci %d no existe\n", v
     }
 
 fibonacci(n)

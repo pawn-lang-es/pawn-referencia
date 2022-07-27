@@ -1,8 +1,8 @@
-/* word count: count words on a string that the user types */
+/* Recuento de palabras: contar palabras en una cadena de caracteres que ingreso el usuario */
 
 main()
     {
-    print "Please type a string: "
+    print "Por favor escriba una frase: "
     new string[100]
     getstring string, sizeof string
 
@@ -16,23 +16,23 @@ main()
         if (strlen(word) == 0)
             break
         count++
-        printf "Word %d: '%s'\n", count, word
+        printf "Palabra %d: '%s'\n", count, word
         }
 
-    printf "\nNumber of words: %d\n", count
+    printf "\nNúmero de palabras: %d\n", count
     }
 
 strtok(const string[], &index)
     {
     new length = strlen(string)
 
-    /* skip leading white space */
+    /* Saltar espacio en blanco  */
     while (index < length && string[index] <= ' ')
         index++
 
-    /* store the word letter for letter */
-    new offset = index                /* save start position of token */
-    new result[20]                    /* string to store the word in */
+    /* Almacene la palabra letra por letra */
+    new offset = index                /* Guardar la posición de inicio del token */
+    new result[20]                    /* Cadena de caracteres para almacenar la palabra */
     while (index < length
            && string[index] > ' '
            && index - offset < sizeof result - 1)
@@ -40,7 +40,7 @@ strtok(const string[], &index)
         result[index - offset] = string[index]
         index++
         }
-    result[index - offset] = EOS      /* zero-terminate the string */
+    result[index - offset] = EOS      /* Terminar la cadena con el terminador cero  */
 
     return result
     }
