@@ -17,29 +17,28 @@ Este manual asume que ya sabes ejecutar un programa PAWN; si no, consulta el man
 
 Un programa PAWN comienza su ejecución en una función de "entrada"∗ -en
 casi todos los ejemplos de este manual, esta función de entrada se llama
-"main". Aquí, la función main contiene una sola instrucción, que se encuentra en la línea inferior a la propia cabeza de la función. Los saltos de línea y la sangría son insignificantes; la invocación de la función print podría estar igualmente en la misma línea que la cabeza de la
-función main.
+"`main`". Aquí, la función `main` contiene una sola instrucción, que se encuentra en la línea inferior de la propia cabeza de la función. Los saltos de línea y la sangría son insignificantes; la invocación de la función `print` podría estar igualmente en la misma línea que la cabeza de la
+función `main`.
 
 La definición de una función requiere de un par de paréntesis
-seguido del nombre de la función. Si una función recibe parámetros, sus declaraciones
-aparecen entre los paréntesis. La función main
+después del nombre de la función. Si una función recibe parámetros, sus declaraciones
+aparecen entre los paréntesis. La función `main`
 no lleva paréntesis. Las reglas son diferentes para una invocación de función (o una llamada de función); los paréntesis son opcionales en
-la llamada a la función print.
+la llamada a la función `print`.
 
-El único argumento de la función print es una cadena de caracteres[^2], que debe ir entre comillas dobles. Los caracteres `\n` cerca del final de
-la cadena forman una secuencia de escape[^3], en este caso indican un símbolo de "nueva línea". Cuando print encuentra la secuencia de escape de nueva línea, avanza el cursor a la primera columna de la siguiente
+El único argumento de la función `print` es una cadena de caracteres[^2], que debe ir entre comillas dobles. Los caracteres `\n` cerca del final de
+la cadena forman una secuencia de escape[^3], en este caso indican un símbolo de "nueva línea". Cuando `print` encuentra la secuencia de escape de nueva línea, avanza el cursor a la primera columna de la siguiente
 línea. Hay que utilizar la secuencia de escape `\n` para insertar una "nueva línea" en la cadena, porque una cadena no puede envolver varias líneas.
 
 [^2]: Cadenas de caracteres literales: [Incluir referencia]()
 [^3]: Secuencias de escape: [Incluir referencia]()
 
 PAWN es un lenguaje "sensible a las mayúsculas": las mayúsculas y las minúsculas se consideran letras diferentes. Sería un error
-escribir la función printf en el ejemplo anterior como "PrintF". Las palabras clave y los símbolos predefinidos, como el nombre de la función "main",
-deben escribirse en minúsculas.
+escribir la función `printf` en el ejemplo anterior como "PrintF". Las palabras clave y los símbolos predefinidos, como el nombre de la función `main`, deben escribirse en minúsculas.
 Si conoce el lenguaje C, puede pensar que el ejemplo anterior
 no se parece mucho al programa "Hola mundo" equivalente en
 C/C++. Sin embargo, PAWN también puede parecerse mucho a C. El siguiente
-ejemplo de programa es también una sintaxis válida de PAWN (y tiene la misma
+ejemplo es también una sintaxis válida de PAWN (y tiene la misma
 semántica que el ejemplo anterior):
 
 ```pawn
