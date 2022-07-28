@@ -35,7 +35,7 @@ El bucle for que recorre la cadena es típico de las funciones de procesamiento 
 
 El algoritmo ROT13 sólo rota las letras; los dígitos, la puntuación y los caracteres especiales se mantienen inalterados. Además, las letras mayúsculas y minúsculas deben tratarse por separado. Dentro del bucle for, dos sentencias if filtran los caracteres de interés. La forma en que el segundo if está encadenado a la cláusula "else" del primer if es digna de mención, ya que es un método típico de comprobación de múltiples condiciones no superpuestas.
 
-Anteriormente en este capítulo, se discutió el concepto de "llamada por valor" versus "llamada por referencia". Cuando trabaje con cadenas, o arrays en general, tenga en cuenta que pawn siempre pasa los arrays por referencia. Lo hace para conservar la memoria y aumentar el rendimiento -los arrays pueden ser estructuras de datos grandes y pasarlos por valor requiere que se haga una copia de esta estructura de datos, lo que consume memoria y tiempo.
+Anteriormente en este capítulo, se discutió el concepto de "llamada por valor" versus "llamada por referencia". Cuando trabaje con cadenas, o arreglos en general, tenga en cuenta que pawn siempre pasa los arreglos por referencia. Lo hace para conservar la memoria y aumentar el rendimiento -los arreglos pueden ser estructuras de datos grandes y pasarlos por valor requiere que se haga una copia de esta estructura de datos, lo que consume memoria y tiempo.
 
 Una función que toma un array como argumento y que no lo modifica, puede marcar el argumento como "const"; ver página 72
 
@@ -97,26 +97,35 @@ strtok(const string[], &index)
     }
 ```
 
-La función main muestra primero un mensaje y recupera una cadena que
-el usuario debe escribir. Luego entra en un bucle: escribir "for (;;)" crea un bucle sin inicialización, sin incremento y sin prueba -es un bucle infinito,
-
-equivalente a "while (true)". Sin embargo, mientras que el analizador de peones le dará una advertencia si escribe "while (true)" (algo así como "expresión de prueba redundante; siempre es verdadera"), "for (;;)" pasa el analizador sin advertencia.
+La función `main` muestra primero un mensaje y recupera una cadena que
+el usuario debe escribir. Luego entra en un bucle: escribir "`for (;;)`" crea un 
+bucle sin inicialización, sin incremento y sin prueba -es un bucle infinito,
+equivalente a "`while (true)`". Sin embargo, mientras que el analizador de PAWN 
+le dará una advertencia si escribe "while (true)" (algo así como "expresión de 
+prueba redundante; siempre es verdadera"), "for (;;)" pasa el analizador sin advertencia.
 
 Un uso típico de un bucle infinito es un caso en el que se necesita un bucle
-con la prueba en el medio -un híbrido entre un while y un do. El peón no soporta bucles con una prueba en el medio directamente,
-pero se puede imitar uno codificando un bucle infinito con una ruptura condicional. En este programa de ejemplo, el bucle
+con la prueba en el medio -un híbrido entre un while y un do. PAWN no soporta 
+bucles con una prueba en el medio directamente, pero se puede imitar uno codificando 
+un bucle infinito con una ruptura condicional. En este programa de ejemplo, el bucle
 
  - obtiene una palabra de la cadena -código antes de la prueba ;
  - comprueba si hay una nueva palabra disponible, y sale del bucle si no es así -la prueba en el medio;
  - imprime la palabra y su número de secuencia - código después de la prueba.
 
-Como se desprende de la línea "word = strtok(string, index)" (y de la declaración de la variable word), pawn soporta la asignación de arrays y las funciones que devuelven arrays. El analizador de peones verifica que el array que devuelve strtok tiene el mismo tamaño y dimensiones que la variable a la que se asigna.
+Como se desprende de la línea "`word = strtok(string, index)`" (y de la declaración 
+de la variable `word`), PAWN soporta la asignación de arreglos y las funciones que 
+devuelven arreglos. El analizador de peones verifica que el array que devuelve `strtok`
+tiene el mismo tamaño y dimensiones que la variable a la que se asigna.
 
-La función strlen es una función nativa (predefinida), pero strtok no lo es: debe ser implementada por nosotros. La función strtok está inspirada en la función del mismo nombre de C/C++, pero no modifica la cadena fuente. En cambio,
-copia los caracteres de la cadena fuente, palabra por palabra, en una matriz local, que luego devuelve.
+La función `strlen` es una función nativa (predefinida), pero `strtok` no lo es: 
+debe ser implementada por nosotros. La función `strtok` está inspirada en la función
+del mismo nombre de C/C++, pero no modifica la cadena fuente. En cambio, copia los 
+caracteres de la cadena fuente, palabra por palabra, en una matriz local, que luego 
+devuelve.
 
 > [Regresar a la página anterior](04-numeros-racionales.md) (Números racionales)
 >
-> [Ir a la siguiente página](06-cadena-de-caracteres.md) (Próximamente)
+> [Ir a la siguiente página](06-datos-estructurados.md) (Datos estructurados)
 >
 > <sub>[Subir al principio de esta página](#cadena-de-caracteres-o-texto)</sub>

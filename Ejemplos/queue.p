@@ -1,4 +1,4 @@
-/* Priority queue (for simple text strings) */
+/* Cola prioritaria (para cadenas de texto simples) */
 
 enum message
     {
@@ -10,26 +10,26 @@ main()
     {
     new msg[message]
 
-    /* insert a few items (read from console input) */
-    printf "Please insert a few messages and their priorities; \
-            end with an empty string\n"
+    /* Inserte algunos elementos (lea la entrada de la consola) */
+    printf "Inserte algunos mensajes y sus prioridades; \
+            Termina con un texto vacío\n"
     for ( ;; )
         {
-        printf "Message:  "
+        printf "Mensaje:  "
         getstring .string = msg[text], .maxlength = 40, .pack = true
         if (strlen(msg[text]) == 0)
             break
-        printf "Priority: "
+        printf "Prioridad: "
         msg[priority] = getvalue()
         if (!insert(msg))
             {
-            printf "Queue is full, cannot insert more items\n"
+            printf "La cola está llena, no se puede insertar más elementos\n"
             break
             }
         }
 
-    /* now print the messages extracted from the queue */
-    printf "\nContents of the queue:\n"
+    /* Ahora imprima los mensajes extraídos de la cola */
+    printf "\nContenido de la cola:\n"
     while (extract(msg))
         printf "[%d] %s\n", msg[priority], msg[text]
     }
@@ -40,20 +40,20 @@ new queueitems = 0
 
 insert(const item[message])
     {
-    /* check if the queue can hold one more message */
+    /* Compruebe si la cola puede contener un mensaje más */
     if (queueitems == queuesize)
-        return false            /* queue is full */
+        return false            /* la cola está llena */
 
-    /* find the position to insert it to */
-    new pos = queueitems        /* start at the bottom */
+    /* Encuentre la posición para insertarlo */
+    new pos = queueitems        /* Empiece en la parte inferior */
     while (pos > 0 && item[priority] > queue[pos-1][priority])
-        --pos                   /* higher priority: move up a slot */
+        --pos                   /* mayor prioridad: mueve una ranura */
 
-    /* make place for the item at the insertion spot */
+    /* Hacer lugar para el artículo en el lugar de inserción */
     for (new i = queueitems; i > pos; --i)
         queue[i] = queue[i-1]
 
-    /* add the message to the correct slot */
+    /* Agregue el mensaje a la ranura correcta */
     queue[pos] = item
     queueitems++
 
@@ -62,15 +62,15 @@ insert(const item[message])
 
 extract(item[message])
     {
-    /* check whether the queue has one more message */
+    /* Compruebe si la cola tiene un mensaje más */
     if (queueitems == 0)
-        return false            /* queue is empty */
+        return false            /* la cola está vacía */
 
-    /* copy the topmost item */
+    /* Copie el artículo más alto */
     item = queue[0]
     --queueitems
 
-    /* move the queue one position up */
+    /* Mueva la cola una posición hacia arriba */
     for (new i = 0; i < queueitems; ++i)
         queue[i] = queue[i+1]
 

@@ -1,12 +1,22 @@
 # Números racionales
+Todos los cálculos realizados hasta este momento involucraban sólo números enteros 
+-valores enteros-. PAWN también tiene soporte para números que pueden contener 
+valores fraccionarios: estos se llaman "números racionales". Sin embargo, el hecho 
+de que este soporte esté habilitado depende de la aplicación anfitriona.
 
-Todos los cálculos realizados hasta este momento involucraban sólo números enteros -valores enteros-. el peón también tiene soporte para números que pueden contener valores fraccionarios:
+Los números racionales pueden ser implementados como números de punto flotante o 
+de punto fijo. La aritmética de punto flotante se utiliza habitualmente para cálculos
+científicos y de propósito general, mientras que la aritmética de punto fijo es más 
+adecuada para el procesamiento financiero y las aplicaciones en las que los errores 
+de redondeo no deberían entrar en juego (o, al menos, deberían hacerlo).
 
-estos se llaman "números racionales". Sin embargo, el hecho de que este soporte esté habilitado depende de la aplicación anfitriona.
-
-Los números racionales pueden ser implementados como números de punto flotante o de punto fijo. La aritmética de punto flotante se utiliza habitualmente para cálculos científicos y de propósito general, mientras que la aritmética de punto fijo es más adecuada para el procesamiento financiero y las aplicaciones en las que los errores de redondeo no deberían entrar en juego (o, al menos, deberían hacerlo).
-
-(o al menos, deberían ser predecibles). El kit de herramientas de peón tiene tanto un módulo de punto flotante como uno de punto fijo, y los detalles (y compensaciones) de estos módulos en su respectiva documentación. La cuestión es, sin embargo, que una aplicación anfitriona puede implementar tanto el punto flotante como el punto fijo, o ambos o ninguno.∗ El programa de abajo requiere que al menos cualquiera de los dos tipos de soporte de números racionales esté disponible; fallará al ejecutarse si la aplicación anfitriona no soporta números racionales en absoluto.
+El kit de herramientas de PAWN tiene tanto un módulo de punto flotante como uno 
+de punto fijo, y los detalles (y compensaciones) de estos módulos en su respectiva
+documentación. La cuestión es, sin embargo, que una aplicación anfitriona puede 
+implementar tanto el punto flotante como el punto fijo, o ambos o ninguno. El 
+programa de abajo requiere que al menos cualquiera de los dos tipos de soporte 
+de números racionales esté disponible; fallará al ejecutarse si la aplicación 
+anfitriona no soporta números racionales en absoluto.
 
 <sub>DISPONIBLE EN: c2f.p</sub>
 ```pawn
@@ -26,24 +36,40 @@ main()
     }
 ```
 
-El programa de ejemplo convierte una tabla de grados Celsius a grados Fahrenheit. La primera directiva de este programa es importar definiciones para el soporte de números racionales desde un archivo de inclusión. El archivo "rational" incluye soporte para números de punto flotante o para números de punto fijo, dependiendo de lo que esté disponible.
+El programa de ejemplo convierte una tabla de grados Celsius a grados Fahrenheit. 
+La primera [directiva]() de este programa es importar definiciones para el soporte 
+de números racionales desde un archivo de inclusión. El archivo "rational" incluye 
+soporte para números de punto flotante o para números de punto fijo, dependiendo 
+de lo que esté disponible.
 
-Las variables Celsius y Fahrenheit se declaran con una etiqueta "Rational:" entre la palabra clave new y el nombre de la variable. Un nombre de etiqueta denota el propósito de la variable, su uso permitido y, como caso especial para los números racionales, su disposición en memoria.
+Las variables Celsius y Fahrenheit se declaran con una etiqueta "`Rational:`" entre 
+la palabra reservada `new` y el nombre de la variable. Un nombre de etiqueta **denota 
+el propósito de la variable**, su uso permitido y, como caso especial para los números 
+racionales, su disposición en memoria.
 
-∗ En realidad, esto ya es cierto para todas las funciones nativas, incluidas todas las funciones nativas que utilizan los ejemplos de este manual.
+La etiqueta Rational: indica al analizador que las variables Celsius y Fahrenheit 
+contienen valores fraccionarios, en lugar de números enteros.
 
-La etiqueta Rational: indica al analizador que las variables Celsius y Fahrenheit contienen valores fraccionarios, en lugar de números enteros.
-
-La ecuación para obtener los grados Fahrenheit a partir de los grados Celsius es
+La ecuación para obtener los grados Fahrenheit a partir de los grados Celsius es:
 
 °F = ⁹⁄₅ + 32 °C
 
-El programa utiliza el valor 1,8 para el cociente 9/₅. Cuando se activa el soporte de números racionales, el peón soporta valores con una parte fraccionaria detrás de
-el punto decimal.
+El programa utiliza el valor 1,8 para el cociente 9/5. Cuando se activa el soporte de 
+números racionales, PAWN soporta valores con una parte fraccionaria detrás de el punto 
+decimal.
 
-El único otro cambio no trivial con respecto a los programas anteriores es que la cadena de formato para la función printf tiene ahora marcadores de posición variables denotados con "%r" en lugar de "%d". El marcador de posición %r imprime un número racional en la posición; %d es sólo para enteros ("números enteros").
+El único otro cambio no trivial con respecto a los programas anteriores es que el texto 
+formateado para la función `printf` tiene ahora marcadores de posición variables denotados 
+con "%r" en lugar de "%d". El marcador de posición %r imprime un número racional en la 
+posición; %d es sólo para enteros ("números enteros").
 
-Utilicé el archivo de inclusión "rational" en lugar de "float" o "fixed" en un intento de hacer el programa de ejemplo portable. Si sabe que la aplicación anfitriona soporta aritmética de punto flotante, puede ser más conveniente "#incluir" las definiciones del archivo float y usar la etiqueta Float: en lugar de Rational -al hacerlo, también debe reemplazar %r por %f en la llamada a printf. Para más detalles sobre el soporte de punto fijo y punto flotante, consulte las notas de aplicación "Librería de soporte de punto fijo" y "Librería de soporte de punto flotante" que están disponibles por separado.
+Utilicé el archivo de inclusión "rational" en lugar de "float" o "fixed" en un intento 
+de hacer el programa de ejemplo portable. Si sabe que la aplicación anfitriona soporta 
+aritmética de punto flotante, puede ser más conveniente "#incluir" las definiciones del 
+archivo float y usar la etiqueta `Float:` en lugar de Rational -al hacerlo, también debe 
+reemplazar %r por %f en la llamada a `printf`. Para más detalles sobre el soporte de punto 
+fijo y punto flotante, consulte las notas de aplicación "Librería de soporte de punto fijo" 
+y "Librería de soporte de punto flotante" que están disponibles por separado.
 
 > [Regresar a la página anterior](03-usando--funciones.md) (Usando funciones)
 >
