@@ -25,23 +25,23 @@ main ()
     }
 ```
 
-La función `main` ahora contiene más que una sola sentencia "`print`". Cuando el cuerpo de una función contiene más de una sentencia, éstas deben ir entre llaves -los caracteres "`{`"
-y "`}`". Esto agrupa las instrucciones en una única sentencia compuesta. La noción de agrupar sentencias en una sentencia compuesta se aplica también a los cuerpos de las instrucciones `if`-`else` y las instrucciones en los bucles.
+La función `main` ahora contiene más que una sola sentencia `print`. Cuando el cuerpo de una función contiene más de una sentencia, éstas deben ir entre llaves -los caracteres "`{`"
+y "`}`". Esto agrupa las instrucciones en una única **sentencia compuesta**. La noción de agrupar sentencias en una sentencia compuesta se aplica también a los cuerpos de las instrucciones `if`-`else` y las instrucciones en los bucles.
 
-La palabra reservada `new` crea una variable. El nombre de la variable sigue a `new`. Es común, pero no obligatorio, asignar un valor a la variable en el momento de su creación. Las variables deben ser declaradas antes de ser utilizadas en una expresión. La función `getvalue` (también una función común  predefinida) lee un valor del teclado y devuelve el resultado. Tenga en cuenta que PAWN es un lenguaje sin tipado, todas las variables son celdas numéricas que pueden
+La palabra reservada `new` crea una variable. El nombre de la variable sigue a `new`. Es común, pero no obligatorio, asignar un valor a la variable en el momento de su creación. Las variables deben ser declaradas antes de ser utilizadas en una expresión. La función `getvalue` (también una función común predefinida) lee un valor del teclado y devuelve el resultado. Tenga en cuenta que PAWN es un lenguaje sin tipado, todas las variables son celdas numéricas que pueden
 contener un valor integral con signo.
 
 El nombre de la función `getvalue` va seguido de un par de paréntesis.
 Estos son necesarios porque el valor que devuelve `getvalue` se
-se almacena en una variable. Normalmente, los argumentos (o parámetros) de la función aparecerían entre los paréntesis, pero `getvalue`
+almacena en una variable. Normalmente, los argumentos (o parámetros) de la función aparecerían entre los paréntesis, pero `getvalue`
 (tal como se utiliza en este programa) no toma ningún argumento explícito.
 Si no se asigna el resultado de una función a una variable o se utiliza
-en una expresión de otra manera, los paréntesis son opcionales.
+en una expresión de otra manera, los paréntesis son **opcionales**.
 Por ejemplo, el resultado de las sentencias `print` y `printf`
 no se utilizan. Puede seguir utilizando paréntesis alrededor de los argumentos,
 pero no es obligatorio.
 
-Las instrucciones tipo bucle, como "`while`", repiten una única instrucción mientras mientras la condición del bucle (la expresión que sigue a la palabra reservada `while`) sea "verdadera". Se pueden ejecutar varias instrucciones en un bucle
+Las instrucciones tipo bucle, como `while`, repiten una única instrucción mientras la condición del bucle (la expresión que sigue a la palabra reservada `while`) sea "verdadera". Se pueden ejecutar varias instrucciones en un bucle
 agrupándolas en una sentencia compuesta. La instrucción `if`-`else`
 tiene una instrucción para la condicion "verdadera" y otra para
 la "falsa".
@@ -59,15 +59,15 @@ forma, de nuevo, una única sentencia.
 Es habitual hacer explícito el anidamiento de las sentencias mediante
 la sangría de las sub-sentencias seguido a una sentencia en el código fuente. En el ejemplo del "Máximo común divisor", el margen izquierdo aumenta en cuatro caracteres de espacio después de la sentencia `while`, y de nuevo después de las palabras reservarda `if` y `else`. Las sentencias que
 pertenecen al mismo nivel, como las invocaciones `printf` y el 
-bucle while, tienen la misma sangría.
+bucle `while`, tienen la misma sangría.
 
-La condición del bucle `while` es "(a != b)"; el símbolo
-!= es el operador "no igual a". Es decir, la instrucción if-else
+La condición del bucle `while` es `(a != b)`; el símbolo
+`!=` es el operador "no igual a". Es decir, la instrucción `if`-`else`
 se repite hasta que "a" sea igual a "b". Es una buena práctica sangrar las
 instrucciones que se ejecutan bajo el control de otra sentencia, como se
 ha hecho en el ejemplo anterior.
 La llamada a `printf`, cerca de la parte inferior del ejemplo, difiere de
-la llamada a `print` justo debajo de la llave de apertura ("{"). La "f" en
+la llamada a `print` justo debajo de la llave de apertura ("`{`"). La `f` en
 `printf` significa "formateado", lo que quiere decir que la función
 puede formatear e imprimir valores numéricos y otros datos (en un formato especificado por el usuario), así como texto literal. El símbolo `%d` en la cadena de caracteres
 es un token que indica la posición y el formato que
