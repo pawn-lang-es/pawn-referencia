@@ -21,7 +21,7 @@ función `main`.
 La definición de una función requiere de un par de paréntesis
 después del nombre de la función. Si una función recibe parámetros, sus declaraciones
 aparecen entre los paréntesis. La función `main`
-no lleva paréntesis. Las reglas son diferentes para una invocación de función (o una llamada de función); los paréntesis son opcionales en
+lleva paréntesis. Las reglas son diferentes para una invocación de función (o una llamada de función); los paréntesis son opcionales en
 la llamada a la función `print`.
 
 El único argumento de la función `print` es una [cadena de caracteres](), que debe ir entre comillas dobles. Los caracteres `\n` cerca del final de
