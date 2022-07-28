@@ -6,7 +6,7 @@ El primer programa en casi cada lenguaje de programacion es el que imprime un te
 
 ```pawn
 main()
-    print "Hola mundo\n"
+    printf "Hola mundo\n"
 ```
 
 Este manual asume que ya sabes ejecutar un programa PAWN; si no, consulta el manual de aplicacion o [Apéndice B](../../).
@@ -22,10 +22,10 @@ La definición de una función requiere de un par de paréntesis
 después del nombre de la función. Si una función recibe parámetros, sus declaraciones
 aparecen entre los paréntesis. La función `main`
 lleva paréntesis. Las reglas son diferentes para una **invocación de función** (o una llamada de función); los paréntesis son opcionales en
-la llamada a la función `print`.
+la llamada a la función `printf`.
 
-El único argumento de la función `print` es una [cadena de caracteres](), que debe ir entre comillas dobles. Los caracteres `\n` cerca del final de
-la cadena forman una [secuencia de escape](), en este caso indican un símbolo de "nueva línea". Cuando `print` encuentra la [secuencias de escape]() de nueva línea, avanza el cursor a la primera columna de la siguiente
+El único argumento de la función `printf` es una [cadena de caracteres](), que debe ir entre comillas dobles. Los caracteres `\n` cerca del final de
+la cadena forman una [secuencia de escape](), en este caso indican un símbolo de "nueva línea". Cuando `printf` encuentra la [secuencias de escape]() de nueva línea, avanza el cursor a la primera columna de la siguiente
 línea. Hay que utilizar la [secuencias de escape]() `\n` para insertar una "nueva línea" en la cadena, porque una cadena no puede envolver varias líneas.
 
 PAWN es un lenguaje "sensible a las mayúsculas": las mayúsculas y las minúsculas se consideran letras diferentes. Sería un error
@@ -60,7 +60,7 @@ es "obsoleto" o "preferido". Los ejemplos de este manual colocan las llaves y ut
 otros estilos de sangría son igual de buenos.
 
 Debido a que PAWN está diseñado para ser un lenguaje de extensión para aplicaciones, el conjunto de funciones/librerías que un programa PAWN tiene a su disposición depende de la aplicación anfitriona. Como resultado, el lenguaje PAWN
-no tiene conocimiento en sí de ninguna función. La función  `print`, utilizada en este primer ejemplo, debe ser puesta a disposición por
+no tiene conocimiento en sí de ninguna función. La función  `printf`, utilizada en este primer ejemplo, debe ser puesta a disposición por
 la aplicación anfitriona y ser "declarada" al analizador sintáctico (*[parser]()*) de PAWN[^2].
 Se asume, sin embargo, que todas las aplicaciones anfitrionas proporcionan un mínimo
 conjunto de funciones comunes, como `print` y `printf`.
