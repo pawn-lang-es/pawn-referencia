@@ -54,6 +54,6 @@ el último elemento, entonces, es `series[99]`. Acceder a `series[100]` es invá
 
 > [Regresar a la página anterior](01-aritmetica-y-expresiones.md) (Aritmética y expresiones)
 >
-> [Ir a la siguiente página](03-usando--funciones.md) (Usando funciones)
+> [Ir a la siguiente página](03-usando-funciones.md) (Usando funciones)
 >
 > <sub>[Subir al principio de esta página](#arreglos-y-constantes)</sub>
