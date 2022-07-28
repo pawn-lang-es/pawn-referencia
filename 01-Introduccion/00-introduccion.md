@@ -15,7 +15,7 @@ Este manual asume que ya sabes ejecutar un programa PAWN; si no, consulta el man
 
 Un programa PAWN comienza su ejecución en una función de "entrada"∗ -en
 casi todos los ejemplos de este manual, esta función de entrada se llama
-`main`. Aquí, la función `main` contiene una sola instrucción, que se encuentra en la línea inferior de la propia cabeza de la función. Los saltos de línea y la sangría son insignificantes; la invocación de la función `print` podría estar igualmente en la misma línea que la cabeza de la
+`main`. Aquí, la función `main` contiene una sola instrucción, que se encuentra en la línea inferior de la propia cabeza de la función. Los saltos de línea y la sangría son insignificantes; la invocación de la función `printf` podría estar igualmente en la misma línea que la cabeza de la
 función `main`.
 
 La definición de una función requiere de un par de paréntesis
