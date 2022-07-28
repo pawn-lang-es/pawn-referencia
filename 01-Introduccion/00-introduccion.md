@@ -1,6 +1,6 @@
 # Introduccion
 
-PAWN es un lenguaje de programación sencillo con una [sintaxis](https://github.com/pawn-lang-es/pawn-referencia/blob/main/terminologia.md#sintaxis) que se asemeja al lenguaje de programación "C". Un programa PAWN consta de un conjunto de funciones y un conjunto de variables. Las variables son objetos de datos y las funciones contienen instrucciones (llamadas "[sentencias](https://github.com/pawn-lang-es/pawn-referencia/blob/main/terminologia.md#sentencia)") que operan sobre los objetos de datos o que realizan tareas.
+PAWN es un lenguaje de programación sencillo con una [sintaxis](https://github.com/pawn-lang-es/pawn-referencia/blob/main/terminologia.md#sintaxis) que se asemeja al lenguaje de programación "C". Un programa PAWN consta de un conjunto de funciones y un conjunto de variables. Las variables son objetos que almacenan datos y las funciones contienen instrucciones (llamadas "[sentencias](https://github.com/pawn-lang-es/pawn-referencia/blob/main/terminologia.md#sentencia)") que operan sobre los objetos de datos o que realizan tareas.
 
 El primer programa en casi cada lenguaje de programacion es el que imprime un texto simple; "Hola mundo" es un ejemplo clásico. En PAWN, luciría como[^1]:
 
