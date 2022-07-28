@@ -55,7 +55,7 @@ o asignación, los paréntesis alrededor del argumento de la función son
 opcionales.
 
 Como apunte, los pocos puntos anteriores se refieren a sintaxis **opcionales**. Usted elige la sintaxis que desea utilizar: ningún estilo es
-es "obsoleto" o "preferido". Los ejemplos de este manual colocan las llaves y utilizan una sangría que se conoce como el
+"obsoleto" o "preferido". Los ejemplos de este manual colocan las llaves y utilizan una sangría que se conoce como el
 "[estilo Whitesmith](https://en.wikipedia.org/wiki/Indentation_style#Whitesmiths_style)", pero PAWN es un lenguaje de formato libre y
 otros estilos de sangría son igual de buenos.
 
