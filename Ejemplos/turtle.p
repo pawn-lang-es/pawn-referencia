@@ -1,20 +1,20 @@
 @keypressed(key)
     {
-    /* get current position */
+    /* Obtenga la posición actual */
     new x, y
     wherexy x, y
 
-    /* determine how the update the current position */
+    /* Determine cómo actualizar la posición actual */
     switch (key)
         {
-        case 'u': y--   /* up */
-        case 'd': y++   /* down */
-        case 'l': x--   /* left */
-        case 'r': x++   /* right */
-        case '\e': exit /* Escape = exit */
+        case 'u': y--   /* arriba */
+        case 'd': y++   /* abajo */
+        case 'l': x--   /* izquierda */
+        case 'r': x++   /* correcta */
+        case '\e': exit /* Escape = Salir */
         }
 
-    /* adjust the cursor position and draw something */
+    /* Ajuste la posición del cursor y dibuja algo */
     moveturtle x, y
     }
 

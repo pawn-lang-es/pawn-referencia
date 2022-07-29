@@ -1,6 +1,6 @@
 # Una calculadora NPI simple
 La notación matemática común, con expresiones como "26 - 3 (5 + 2)", se conoce como notación algebraica. Es una notación compacta y
-nos hemos acostumbrado a ella. pawn y, en general, la mayoría de los lenguajes de programación utilizan la notación algebraica para sus expresiones de programación. 
+nos hemos acostumbrado a ella. PAWN y, en general, la mayoría de los lenguajes de programación utilizan la notación algebraica para sus expresiones de programación. 
 
 La notación algebraica tiene algunas desventajas. Por ejemplo, ocasionalmente requiere que el orden de las operaciones se haga explícito encerrando una parte de la expresión entre paréntesis. La expresión que encabeza este párrafo puede reescribirse para eliminar los paréntesis, pero a costa de casi duplicar su longitud. En la práctica, la notación algebraica se complementa con reglas de nivel de precedencia que dicen, por ejemplo, que la multiplicación va antes que la suma y la resta.∗ Los niveles de precedencia reducen en gran medida la necesidad de los paréntesis, pero no los evitan del todo. Lo peor es que cuando el número de operadores crece, la jerarquía de niveles de precedencia y el nivel de precedencia particular
 de precedencia para cada operador se hace difícil de memorizar, por lo que un lenguaje rico en operadores como APL elimina por completo los niveles de precedencia.
@@ -225,14 +225,14 @@ clearstack()
 
 El archivo stack.inc incluye de nuevo el archivo rational. Esto no es técnicamente necesario (rpnparse.inc ya incluía las definiciones para el soporte de números racionales), pero tampoco hace ningún daño y, en aras de la reutilización del código, es mejor hacer que cualquier fichero incluya las definiciones de las librerías de las que depende.
 
-Observe cómo las dos variables globales stack y stackidx se declaran
-como variables "estáticas", utilizando la palabra clave static en lugar de new. Esto hace que las variables globales sean "visibles" sólo en ese archivo. Para todos los demás archivos en un
-proyecto más grande, los símbolos stack y stackidx son invisibles y no pueden (evidentemente) modificar las variables. También permite que los otros módulos declaren sus propias variables privadas con estos nombres, por lo que se evita el choque de nombres.
+Observe cómo las dos variables globales `stack` y `stackidx` se declaran
+como variables "estáticas", utilizando la palabra reservada `static` en lugar de `new`. Esto hace que las variables globales sean "visibles" sólo en ese archivo. Para todos los demás archivos en un
+proyecto más grande, los símbolos `stack` y `stackidx` son invisibles y no pueden (evidentemente) modificar las variables. También permite que los otros módulos declaren sus propias variables privadas con estos nombres, por lo que se evita el choque de nombres.
 
-La calculadora rpn es en realidad un programa bastante pequeño, pero se ha configurado como si fuera un programa más grande. También fue diseñado para demostrar un conjunto de elementos del lenguaje de peones y el programa de ejemplo podría haber sido implementado de forma más compacta.
+La calculadora NPI es en realidad un programa bastante pequeño, pero se ha configurado como si fuera un programa más grande. También fue diseñado para demostrar un conjunto de elementos del lenguaje PAWN y el programa de ejemplo podría haber sido implementado de forma más compacta.
 
 > [Regresar a la página anterior](07-operaciones-binarias-para-manipular-conjuntos.md) (Operaciones binarias)
 >
-> [Ir a la siguiente página]() (Próximamente)
+> [Ir a la siguiente página](09-programacion-basada-en-eventos.md) (Programación basada en eventos)
 >
 > <sub>[Subir al principio de esta página](#una-calculadora-npi-simple)</sub>

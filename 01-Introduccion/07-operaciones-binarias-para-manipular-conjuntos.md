@@ -42,7 +42,7 @@ main()
         }
     #pragma unused A, B
 
-    print "El punto de partida:"
+    print "El punto de partida: "
     new start = clamp( .value = toupper(getchar()) - 'A',
                        .min = 0,
                        .max = sizeof nextstep - 1
@@ -51,7 +51,7 @@ main()
     print "\nEl número de pasos: "
     new steps = getvalue()
 
-    /* make the set */
+    /* crear el conjunto */
     new result = findtargets(start, steps, nextstep)
     printf "Los puntos en el rango de %C en %D pasos:", start + 'A', steps
     for (new i = 0; i < sizeof nextstep; i++)
@@ -97,8 +97,8 @@ bitcount(set)
 }
 ```
 
-Con un tamaño de celda de 32 bits, el bucle de esta función itera 32 veces para comprobar un solo bit en cada iteración. Con un poco de magia aritmética binaria, podemos reducirlo a un bucle sólo para el número de bits que están "establecidos".
-Es decir, la siguiente función itera sólo una vez si el valor de entrada tiene sólo un bit establecido:
+Con un tamaño de celda de 32 bits, el bucle de esta función itera 32 veces para comprobar un solo bit en cada iteración. Con un poco de magia aritmética binaria, podemos reducirlo a un bucle solo para el número de bits que están "establecidos".
+Es decir, la siguiente función itera solo una vez si el valor de entrada tiene solo un bit establecido:
 
 ```pawn
 bitcount(set)

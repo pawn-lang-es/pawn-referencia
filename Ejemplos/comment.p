@@ -1,4 +1,4 @@
-/* parse C comments interactively, using events and a state machine */
+/* Analice los comentarios tipo-C interactivamente, utilizando eventos y una máquina de estado */
 
 main()
     state plain
@@ -14,7 +14,7 @@ main()
     {
     state (key != '/') plain
     state (key == '*') comment
-    echo '/'    /* print '/' held back from previous state */
+    echo '/'    /* Imprimir '/' retenido del estado anterior */
     if (key != '/')
         echo key
     }

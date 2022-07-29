@@ -1,4 +1,4 @@
-/* traffic light synchronizer, using states in an event-driven model */
+/* Sincronizador de semáforo, utilizando los estados en un modelo basado en eventos */
 #include <time>
 
 main()                                state green_wait
