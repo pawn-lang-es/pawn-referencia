@@ -1,25 +1,25 @@
-/* extract words from a string (words are separated by white space) */
+/* extrae palabras de un texto (palabras separadas por un espacio en blanco) */
 #include <string>
 
 strtok(const string[], &index)
     {
     new length = strlen(string)
 
-    /* skip leading white space */
+    /* saltar espacio en blanco */
     while (index < length && string[index] <= ' ')
         index++
 
-    /* store the word letter for letter */
-    new offset = index                /* save start position of token */
-    new result[20]                    /* string to store the word in */
+    /* almacena la palabra letra por letra */
+    new offset = index     /* guardar la posición de inicio del token */
+    new result[20]         /* cadena de caracter para guardar la palabra */
     while (index < length
-           && string[index] > ' '
-           && index - offset < sizeof result - 1)
-        {
-        result[index - offset] = string[index]
-        index++
-        }
-    result[index - offset] = EOS      /* zero-terminate the string */
+        && string[index] > ' '
+        && index - offset < sizeof result - 1)
+            {
+            result[index - offset] = string[index]
+            index++
+            }
+    result[index - offset] = EOS /* terminar la cadena con cero */
 
     return result
     }

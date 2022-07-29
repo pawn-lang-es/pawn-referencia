@@ -1,12 +1,12 @@
-/* main rpn parser and lexical analysis, part of the RPN calculator */
+/* Parser RPN principal y análisis léxico, parte de la calculadora RPN */
 #include <rational>
 #include <string>
 
 enum token
     {
-              t_type,           /* operator or token type */
-    Rational: t_value,          /* value, if t_type is "Number" */
-              t_word[20],       /* raw string */
+              t_type,           /* tipo de operador o token */
+    Rational: t_value,          /* valor, si t_type es "número" */
+              t_word[20],       /* texto simplemente */
     }
 
 const Number    = '0'
@@ -44,16 +44,16 @@ rpncalc(const string[])
 
 gettoken(const string[], &index)
     {
-    /* first get the next "word" from the string */
+    /* Primero obtenga la próxima "palabra" de la cadena */
     new word[20]
     word = strtok(string, index)
 
-    /* then parse it */
+    /* luego analizarlo */
     new field[token]
     field[t_word] = word
     if (strlen(word) == 0)
         {
-        field[t_type] = EndOfExpr /* special "stop" symbol */
+        field[t_type] = EndOfExpr /* símbolo especial de "parada" */
         field[t_value] = 0
         }
     else if ('0' <= word[0] <= '9')

@@ -1,11 +1,11 @@
-/* a simple RPN calculator */
+/* una calculadora NPI simple */
 #include strtok
 #include stack
 #include rpnparse
 
 main()
     {
-    print "Type an expression in Reverse Polish Notation: "
+    print "Escriba una expresión en notación polaca inversa: "
     new string[100]
     getstring string, sizeof string
     rpncalc string

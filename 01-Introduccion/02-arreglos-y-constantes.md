@@ -1,10 +1,10 @@
 # Arreglos y constantes
 
-Junto a variables simples con un tamaño de una sola celda, PAWN admite "arreglo de variables" que contienen muchas celdas/valores. El siguiente programa muestra una serie de números primos utilizando el conocido "Tamiz de Eratosthenes".El programa también presenta otro concepto nuevo: *constantes simbólicas*. Las constantes simbólicas parecen variables, pero no se pueden cambiar.
+Junto a variables simples con un tamaño de una sola celda, PAWN admite "arreglo de variables" que contienen muchas celdas/valores. El siguiente programa muestra una serie de números primos utilizando el conocido "Tamiz de Eratosthenes". El programa también presenta otro concepto nuevo: *constantes simbólicas*. Las constantes simbólicas parecen variables, pero no se pueden cambiar.
 
 <sub>DISPONIBLE EN: sieve.p</sub>
 ```pawn
-/* Imprime todos los números primos menores a 100, usando el "Tamix de Eratosthenes" */
+/* Imprime todos los números primos menores a 100, usando el "Tamiz de Eratosthenes" */
 
 main ()
     {

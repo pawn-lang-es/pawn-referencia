@@ -1,4 +1,4 @@
-/* stack functions, part of the RPN calculator */
+/* funciones para manipular pilas, parte de una calculadora NPI */
 #include <rational>
 
 static Rational: stack[50]
