@@ -1,0 +1,1 @@
+# Inicialización progresiva de un arreglo
