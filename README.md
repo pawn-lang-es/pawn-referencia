@@ -1,7 +1,7 @@
 # Guía del lenguaje PAWN
 
 Encontrarás la referencia del lenguaje Pawn oficial traducida al español.
-Última actualización: 27 de julio de 2022.
+Última actualización: 30 de julio de 2022.
 
 ## Índice
 
