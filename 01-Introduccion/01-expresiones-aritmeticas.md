@@ -50,7 +50,7 @@ agrupándolas en una sentencia compuesta. La instrucción `if`-`else`
 tiene una instrucción para la condicion "verdadera" y otra para
 la "falsa".
 
-> Ver bucle `while` y ver `if`-`else` en capítulo [7. Sentencias](/07-Sentencias/00-sentencias.md).
+> Ver bucle `while` y ver `if`-`else` en el capítulo [7. Sentencias](/07-Sentencias/00-sentencias.md).
 
 Observe que algunas sentencias, como `while` e `if`-`else`, contienen
 (o "se despliegan alrededor de") otra instrucción —en el caso de `if`-`else`
@@ -94,7 +94,7 @@ y
 ```pawn
 printf "El 20%% del personal representa el 80%% de los gastos\n"
 ```
-imprimen la misma cadena.
+imprimen el mismo texto.
 
 
 > [Regresar a la página anterior](00-introduccion.md) (Introducción)
