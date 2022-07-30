@@ -21,11 +21,13 @@ función `main`.
 [^note]: No confundir con las funciones de entrada, las cuales son llamadas de 
 entrada, pero sirven para otro propósito.
 
-La definición de una función requiere de un par de paréntesis
+La **definición de una función** requiere de un par de paréntesis
 después del nombre de la función. Si una función recibe parámetros, sus declaraciones
 aparecen entre los paréntesis. La función `main`
 lleva paréntesis. Las reglas son diferentes para una **invocación de función** (o una llamada de función); los paréntesis son opcionales en
 la llamada a la función `printf`.
+
+> ¿Cuál es la diferencia entre la definición de una función y la invocación de una función? Ver capítulo [3. Funciones](/03-Funciones/01-argumentos-de-funcion.md)
 
 El único argumento de la función `printf` es una [cadena de caracteres](), que debe ir entre comillas dobles. Los caracteres `\n` cerca del final de
 la cadena forman una [secuencia de escape](), en este caso indican un símbolo de "nueva línea". Cuando `printf` encuentra la [secuencias de escape]() de nueva línea, avanza el cursor a la primera columna de la siguiente
