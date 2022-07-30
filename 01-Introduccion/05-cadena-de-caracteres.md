@@ -43,7 +43,11 @@ Debido a esta regla, la función rot13 puede modificar su parámetro de función
 
 Otro punto de interés son las condiciones de las dos sentencias if. El primer if, por ejemplo, mantiene la condición "'a' <= string[índice] <= 'z'", lo que significa que la expresión es verdadera si (y sólo si) tanto 'a' <= string[índice] como string[índice] <= 'z' son verdaderos. En la expresión combinada, se dice que los operadores relacionales están "encadenados", ya que encadenan múltiples comparaciones en una condición.
 
+> Ver operadores relacionales en el capítulo [6. Operadores y expresiones](/06-Operadores%20y%20expresiones/05-relacion.md).
+
 Finalmente, observe cómo el último printf de la función main utiliza la secuencia de escape \" para imprimir una comilla doble. Normalmente una comilla doble termina la cadena literal; la secuencia de escape "\"" inserta una comilla doble en la cadena.
+
+> Ver secuencia de escape en el capítulo [5. Sintaxis general](/05-Sintaxis%20general/00-sintaxis-general.md).
 
 Siguiendo con el tema de las cadenas y las matrices, a continuación se muestra un programa que separa una cadena de texto en palabras individuales y las cuenta. Es un programa sencillo que muestra algunas características nuevas del lenguaje PAWN.
 

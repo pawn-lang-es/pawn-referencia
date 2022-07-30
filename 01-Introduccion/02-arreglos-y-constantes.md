@@ -60,7 +60,7 @@ Hay un problema de "off-by-one" que debe tener en cuenta cuando
 trabajar con arreglos. El primer elemento de la matriz de `series` es `series[0]`, así que si la matriz contiene MAX_PRIMES elementos, el último elemento de la matriz es `series[MAX_PRIMES - 1]`. Si MAX_PRIMES es 100
 el último elemento, entonces, es `series[99]`. Acceder a `series[100]` es inválido.
 
-> [Regresar a la página anterior](01-aritmetica-y-expresiones.md) (Aritmética y expresiones)
+> [Regresar a la página anterior](01-expresiones-aritmeticas.md) (Expresiones aritméticas)
 >
 > [Ir a la siguiente página](03-usando-funciones.md) (Usando funciones)
 >

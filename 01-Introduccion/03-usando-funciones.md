@@ -49,10 +49,14 @@ Fibonacci negativo es inválido, y la instrucción `assert` lo marca como un err
 del programador si se da este caso. Las aserciones sólo deben marcar los errores
 del programador, nunca los errores de entrada del usuario.
 
+> Ver sentencia `assert` en el capítulo [7. Sentencias](/07-Sentencias/00-sentencias.md).
+
 La implementación de una función definida por el usuario no es muy diferente a la de
 la función `main`. Sin embargo, la función `fibonacci` muestra dos conceptos nuevos: 
 recibe un valor de entrada a través de un parámetro y devuelve un valor (tiene un 
 "resultado").
+
+> Ver funciones: propiedades y características en el capítulo [3. Funciones](/03-Funciones/00-funciones.md).
 
 Los parámetros de la función se declaran en la cabecera de la función; el único 
 parámetro en este ejemplo es "`n`". Dentro de la función, un parámetro se comporta
@@ -62,10 +66,12 @@ a la función.
 La sentencia `return` termina una función y establece el resultado de la misma. 
 No es necesario que aparezca al final de la función; se permiten salidas anticipadas.
 
-La función principal del ejemplo de Fibonacci llama a funciones "nativas" predefinidas, 
+La función `main` del ejemplo de Fibonacci llama a funciones "nativas" predefinidas, 
 como `getvalue` y `printf`, así como a la función definida por el usuario `fibonacci`. 
 Desde la perspectiva de la llamada a una función (como en la función `main`), no 
 hay diferencia entre las funciones definidas por el usuario y las nativas.
+
+> Ver interfaz de funciones nativas en el capítulo [3.10 Funciones nativas](/03-Funciones/10-funciones-nativas.md).
 
 La secuencia de números de Fibonacci describe una sorprendente variedad de fenómenos 
 naturales. Por ejemplo, los dos o tres conjuntos de espirales de las piñas, las piñas
@@ -195,6 +201,8 @@ siguen siendo locales para la función `DateToJulian`. La función `main` pasa l
 respectivamente. A pesar de que `DateToJulian` modifica el año y el mes, no cambia `y` y `m` 
 en la función `main`; sólo cambia las copias locales de `y` y `m`. Este concepto se llama 
 "**llamada por valor**".
+
+> Ver llamada por valor vs. llamada por referencia en el capítulo [3.1 Argumentos de función](/03-Funciones/01-argumentos-de-funcion.md).
 
 El ejemplo utiliza intencionadamente diferentes nombres para las variables locales en las 
 funciones `main` y `DateToJulian`, con el fin de facilitar la explicación anterior. Renombrar

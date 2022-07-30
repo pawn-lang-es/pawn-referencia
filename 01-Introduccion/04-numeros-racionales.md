@@ -13,10 +13,13 @@ de redondeo no deberían entrar en juego (o, al menos, deberían hacerlo).
 El kit de herramientas de PAWN tiene tanto un módulo de punto flotante como uno 
 de punto fijo, y los detalles (y compensaciones) de estos módulos en su respectiva
 documentación. La cuestión es, sin embargo, que una aplicación anfitriona puede 
-implementar tanto el punto flotante como el punto fijo, o ambos o ninguno. El 
+implementar tanto el punto flotante como el punto fijo, o ambos o ninguno[^1]. El 
 programa de abajo requiere que al menos cualquiera de los dos tipos de soporte 
 de números racionales esté disponible; fallará al ejecutarse si la aplicación 
 anfitriona no soporta números racionales en absoluto.
+
+[^1]: De hecho, esto es verdadero para *todas* las funciones nativas, incluyendo todas
+las funciones que se usan en los ejemplos de este manual.
 
 <sub>DISPONIBLE EN: c2f.p</sub>
 ```pawn
@@ -46,6 +49,8 @@ Las variables Celsius y Fahrenheit se declaran con una etiqueta "`Rational:`" en
 la palabra reservada `new` y el nombre de la variable. Un nombre de etiqueta **denota 
 el propósito de la variable**, su uso permitido y, como caso especial para los números 
 racionales, su disposición en memoria.
+
+> Ver etiquetas en el capítulo [2.13 Etiquetas](/02-Datos%20y%20declaraciones/13-etiquetas.md).
 
 La etiqueta Rational: indica al analizador que las variables Celsius y Fahrenheit 
 contienen valores fraccionarios, en lugar de números enteros.

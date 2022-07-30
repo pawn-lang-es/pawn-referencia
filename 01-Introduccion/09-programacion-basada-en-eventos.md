@@ -15,6 +15,8 @@ Lo mismo ocurre con las funciones públicas -los puntos de entrada de un script-
 su sistema operativo o entorno soporte las funciones estándar de la terminal
 como la fijación de la posición del cursor.
 
+> Ver funciones públicas en el capítulo [3.7 Funciones públicas](/03-Funciones/07-funciones-publicas.md). 
+
 ## Ejemplo
 Un primer lenguaje de programación que se desarrolló exclusivamente para enseñar los conceptos de programación a los niños fue "Logo". Este dialecto de LISP hacía que la programación fuera visual haciendo que un pequeño robot, la "tortuga", se desplazara por el suelo bajo el control de un sencillo programa. Este concepto se copió luego para mover un cursor (normalmente triangular) de la pantalla del ordenador, de nuevo bajo el control de un programa. Una novedad era que la tortuga dejaba un rastro tras de sí, lo que permitía crear dibujos programando adecuadamente la tortuga -desde entonces se conoció como gráficos de tortuga-.
 
