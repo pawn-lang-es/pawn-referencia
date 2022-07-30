@@ -74,7 +74,7 @@ conjunto de funciones comunes, como `print` y `printf`.
 
 > Más descripción de las funciones en el capítulo [9. Librerías propuestas](). 
 
-[^2]: En la especificación del lenguaje, el término "analizador sintáctico" (*parser* en inglés) se refiere a cualquier implementación que procese y ejecute programas Pawn conformes, ya sean intérpretes o [compiladores](https://github.com/pawn-lang-es/pawn-referencia/blob/main/terminologia.md#compilador).
+[^2]: En la especificación del lenguaje, el término "analizador sintáctico" (*parser* en inglés) se refiere a cualquier implementación que procese y ejecute programas Pawn adecuados, ya sean intérpretes o [compiladores](https://github.com/pawn-lang-es/pawn-referencia/blob/main/terminologia.md#compilador).
 
 En algunos entornos, la pantalla o el terminal deben estar habilitados
 antes de que cualquier texto pueda ser emitido en él. Si este es el caso, usted
@@ -87,6 +87,6 @@ no la requieren o no la proporcionan.
 
 > [Regresar a la página anterior](../README.md) (Índice)
 >
-> [Ir a la siguiente página](01-aritmetica-y-expresiones.md) (Aritmética y expresiones)
+> [Ir a la siguiente página](01-expresiones-aritmeticas.md) (Expresiones aritméticas)
 >
 > <sub>[Subir al principio de esta página](#introducción)</sub>
