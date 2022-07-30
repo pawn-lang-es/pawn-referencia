@@ -115,4 +115,4 @@ A pesar de su simplicidad, este script tiene la interesante propiedad de que no 
 >
 > [Ir a la siguiente página](10-programacion-por-estados.md) (Programación por estados)
 >
-> <sub>[Subir al principio de esta página](#una-calculadora-npi-simple)</sub>
+> <sub>[Subir al principio de esta página](#programación-basada-en-eventos)</sub>

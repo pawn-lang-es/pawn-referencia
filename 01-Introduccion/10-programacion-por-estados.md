@@ -1,5 +1,7 @@
 # Programación por estados
-En un programa que sigue el modelo basado en eventos, los eventos llegan individualmente, y también se responde a ellos de forma individual. En ocasiones, sin embargo, un evento forma parte de un flujo secuencial, que debe ser manejado en orden. Un ejemplo son los protocolos de transferencia de datos a través de, por ejemplo, una línea serie. Cada evento puede llevar un comando, un fragmento de datos que forma parte de un archivo mayor, un acuse de recibo u otras señales que participan en el protocolo.
+En un programa que sigue el modelo basado en eventos, los eventos llegan individualmente, y también se responde a ellos de forma individual. En ocasiones, sin embargo, un evento forma parte de un flujo secuencial, que debe ser manejado en orden. Un ejemplo son los protocolos de transferencia de datos a través de, por ejemplo, una línea serie [^1]. [[Detallar ejemplo]()]
+
+[^1]: Cambiar por un ejemplo más familiar.
 
 Para que el flujo de eventos (y los paquetes de datos que llevan) tenga sentido, el programa dirigido por eventos debe seguir un protocolo preciso de intercambio.
 

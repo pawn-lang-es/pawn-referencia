@@ -1,4 +1,4 @@
-# Introduccion
+# Introducción
 
 PAWN es un lenguaje de programación sencillo con una [sintaxis](https://github.com/pawn-lang-es/pawn-referencia/blob/main/terminologia.md#sintaxis) que se asemeja al lenguaje de programación "C". Un programa PAWN consta de un conjunto de funciones y un conjunto de variables. Las variables son objetos que almacenan datos y las funciones contienen instrucciones (llamadas "[sentencias](https://github.com/pawn-lang-es/pawn-referencia/blob/main/terminologia.md#sentencia)") que operan sobre las variables o que realizan tareas.
 
@@ -79,3 +79,5 @@ no la requieren o no la proporcionan.
 > [Regresar a la página anterior](../README.md) (Índice)
 >
 > [Ir a la siguiente página](01-aritmetica-y-expresiones.md) (Aritmética y expresiones)
+>
+> <sub>[Subir al principio de esta página](#introducción)</sub>
