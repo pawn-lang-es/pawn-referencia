@@ -27,19 +27,21 @@ aparecen entre los paréntesis. La función `main`
 lleva paréntesis. Las reglas son diferentes para una **invocación de función** (o una llamada de función); los paréntesis son opcionales en
 la llamada a la función `printf`.
 
-> ¿Cuál es la diferencia entre la definición de una función y la invocación de una función? Ver capítulo [3. Funciones](/03-Funciones/01-argumentos-de-funcion.md)
+> ¿Cuál es la diferencia entre la definición de una función y la invocación de una función? Ver capítulo [3. Funciones](/03-Funciones/01-argumentos-de-funcion.md).
 
 El único argumento de la función `printf` es una [cadena de caracteres](), que debe ir entre comillas dobles. Los caracteres `\n` cerca del final de
-la cadena forman una [secuencia de escape](), en este caso indican un símbolo de "nueva línea". Cuando `printf` encuentra la [secuencias de escape]() de nueva línea, avanza el cursor a la primera columna de la siguiente
-línea. Hay que utilizar la [secuencias de escape]() `\n` para insertar una "nueva línea" en la cadena, porque una cadena no puede envolver varias líneas.
+la cadena forman una [secuencia de escape](), en este caso indican un símbolo de "nueva línea". Cuando `printf` encuentra la secuencias de escape de nueva línea, avanza el cursor a la primera columna de la siguiente
+línea. Hay que utilizar la secuencia de escape `\n` para insertar una "nueva línea" en la cadena, porque una cadena no puede envolver varias líneas.
+
+> Ver [cadena de caracteres literales]() - Ver [secuencias de escape]().
 
 PAWN es un lenguaje "sensible a las mayúsculas": las mayúsculas y las minúsculas se consideran letras diferentes. Sería un error
-escribir la función `printf` en el ejemplo anterior como "PrintF". Las palabras clave y los símbolos predefinidos, como el nombre de la función `main`, deben escribirse en minúsculas.
-Si conoce el lenguaje C, puede pensar que el ejemplo anterior
+escribir la función `printf` en el ejemplo anterior como "PrintF". Las palabras reservadas y los símbolos predefinidos, como el nombre de la función `main`, *deben escribirse en minúsculas*.
+Si conoces el lenguaje C, puedes pensar que el ejemplo anterior
 no se parece mucho al programa "Hola mundo" equivalente en
 C/C++. Sin embargo, PAWN también puede parecerse mucho a C. El siguiente
 ejemplo es también una sintaxis válida de PAWN (y tiene la misma
-semántica que el ejemplo anterior):
+[semántica]() que el ejemplo anterior):
 
 ```pawn
 #include <console>
@@ -51,7 +53,7 @@ main()
 ```
 
 Estos primeros ejemplos también revelan algunas diferencias entre PAWN y el lenguaje C:
-- normalmente no es necesario incluir ningún "archivo de cabecera" definido por el sistema
+- normalmente no es necesario incluir ningún "archivo de cabecera" definido por el sistema;
 - el punto y coma es opcional (excepto cuando se escriben varias sentencias en una línea);
 - cuando el cuerpo de una función es una sola instrucción, los corchetes
 (para una instrucción compuesta) son opcionales;
@@ -69,6 +71,8 @@ no tiene conocimiento en sí de ninguna función. La función  `printf`, utiliza
 la aplicación anfitriona y ser "declarada" al analizador sintáctico (*[parser]()*) de PAWN[^2].
 Se asume, sin embargo, que todas las aplicaciones anfitrionas proporcionan un mínimo
 conjunto de funciones comunes, como `print` y `printf`.
+
+> Más descripción de las funciones en el capítulo [9. Librerías propuestas](). 
 
 [^2]: En la especificación del lenguaje, el término "analizador sintáctico" (*parser* en inglés) se refiere a cualquier implementación que procese y ejecute programas Pawn conformes, ya sean intérpretes o [compiladores](https://github.com/pawn-lang-es/pawn-referencia/blob/main/terminologia.md#compilador).
 
