@@ -1,4 +1,4 @@
-# Variables constantes
+# Declaración de variables constantes
 
 A veces es conveniente poder crear una variable que se inicializa una vez y que no puede ser modificada. Una variable de este tipo se comporta como una *constante simbólica*, pero sigue siendo una variable.
 
@@ -17,14 +17,14 @@ Tres situaciones típicas en las que se puede utilizar una variable constante so
 
 - Para una variable pública que debe ser establecida por la aplicación anfitriona, y sólo por la aplicación anfitriona. 
 
-> Véase la sección anterior para las variables públicas.
+> Véase la sección anterior para entender las variables públicas.
 
-- Un caso especial es marcar los arreglos que se pasan como  argumentos de funciones como constantes. Los arreglos como argumentos siempre se pasan por referencia, declararlos como `const` protege contra modificaciones involuntarias. 
+- Un caso especial es marcar como constantes los arreglos que se pasan como argumentos de una función. Los arreglos como argumentos siempre se pasan por referencia, declararlos como `const` protege contra modificaciones involuntarias. 
 
 > Consulte el capítulo [3.1 Argumentos de función](/03-Funciones/01-argumentos-de-funcion.md) para ver un ejemplo de argumentos constantes.
 
-> [Regresar a la página anterior]() ()
+> [Regresar a la página anterior](05-declaracion-de-variables-publicas.md) (Declaración de variables públicas)
 >
-> [Ir a la página siguiente]() ()
+> [Ir a la página siguiente](07-arreglos-de-una-dimension.md) (Arreglos de una dimensión)
 >
-> <sub>[Subir al principio de esta página]()</sub>
+> <sub>[Subir al principio de esta página](#declaración-de-variables-constantes)</sub>

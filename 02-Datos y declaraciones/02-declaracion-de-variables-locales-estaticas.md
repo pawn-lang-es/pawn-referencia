@@ -3,8 +3,8 @@ Una variable local se destruye cuando la [ejecución]() abandona la sentencia co
 sólo existen durante el tiempo de ejecución de esa función. Cada nueva ejecución de la función crea e inicializa nuevas variables locales. Cuando una variable local es
 declarada con la palabra clave `static` en lugar de `new`, la variable sigue existiendo después de la finalización de una función. Esto significa que las variables locales estáticas proporcionan un almacenamiento privado y permanente al que sólo se puede acceder desde una única función (o bloque compuesto). Al igual que las variables globales, las variables locales estáticas sólo pueden inicializarse con expresiones constantes.
 
-> [Regresar a la página anterior]() ()
+> [Regresar a la página anterior](01-declaracion-de-variables-de-estado.md) (Declaración de variables de estado)
 >
-> [Ir a la página siguiente]() ()
+> [Ir a la página siguiente](03-declaracion-de-variables-globales-estaticas.md) (Declaración de variables globales estáticas)
 >
-> <sub>[Subir al principio de esta página]()</sub>
+> <sub>[Subir al principio de esta página](#declaración-de-variables-locales-estáticas)</sub>

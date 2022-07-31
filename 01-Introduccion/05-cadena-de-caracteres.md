@@ -130,6 +130,6 @@ devuelve.
 
 > [Regresar a la página anterior](04-numeros-racionales.md) (Números racionales)
 >
-> [Ir a la siguiente página](06-datos-estructurados.md) (Datos estructurados)
+> [Ir a la siguiente página](06-enumeraciones.md) (Enumeraciones)
 >
 > <sub>[Subir al principio de esta página](#cadena-de-caracteres-o-texto)</sub>

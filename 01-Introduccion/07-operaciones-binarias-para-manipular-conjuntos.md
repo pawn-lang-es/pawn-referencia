@@ -112,7 +112,7 @@ bitcount(set)
 }
 ```
 
-> [Regresar a la página anterior](06-datos-estructurados.md) (Datos estructurados)
+> [Regresar a la página anterior](06-enumeraciones.md) (Enumeraciones)
 >
 > [Ir a la siguiente página](08-una-calculadora-npi-simple.md) (Una calculadora NPI simple)
 >

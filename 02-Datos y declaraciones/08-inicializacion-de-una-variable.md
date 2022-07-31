@@ -1,4 +1,4 @@
-# Inicialización
+# Inicialización de una variable
 
 Las variables pueden ser inicializadas en su declaración. El inicializador de un variable *global* debe ser una constante. Los arreglos, globales o locales, también deben ser inicializadas con constantes.
 
@@ -26,8 +26,8 @@ new q[]                                 /* tamaño desconocido del arreglo */
 neq p[2] = { i + j, k -3 }              /* los inicializadores de un arreglo deben ser constantes */
 ```
 
-> [Regresar a la página anterior]() ()
+> [Regresar a la página anterior](07-arreglos-de-una-dimension.md) (Arreglos de una dimensión)
 >
-> [Ir a la página siguiente]() ()
+> [Ir a la página siguiente](09-inicializacion-progresiva-de-un-arreglo.md) (Inicialización progresiva de un arrreglo)
 >
-> <sub>[Subir al principio de esta página]()</sub>
+> <sub>[Subir al principio de esta página](#inicialización-de-una-variable)</sub>

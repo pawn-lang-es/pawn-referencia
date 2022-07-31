@@ -1,4 +1,4 @@
-# Arreglos y enumeraciones (datos estructurados)
+# Enumeraciones (datos estructurados)
 En un lenguaje sin tipado, podríamos asignar un propósito diferente a algunos 
 elementos de un arreglo que a otros elementos en el mismo arreglo. PAWN soporta 
 constantes **enumeradas** con una extensión que le permite imitar algunas funcionalidades
@@ -160,4 +160,4 @@ listas de parámetros.
 >
 > [Ir a la siguiente página](07-operaciones-binarias-para-manipular-conjuntos.md) (Operaciones binarias)
 >
-> <sub>[Subir al principio de esta página](#arreglos-y-enumeraciones-datos-estructurados)</sub>
+> <sub>[Subir al principio de esta página](#enumeraciones-datos-estructurados)</sub>
