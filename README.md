@@ -11,7 +11,7 @@ Encontrarás la referencia del lenguaje Pawn oficial traducida al español.
     - [Usando funciones](/01-Introduccion/03-usando-funciones.md)
     - [Números racionales](/01-Introduccion/04-numeros-racionales.md)
     - [Cadena de caracteres](/01-Introduccion/05-cadena-de-caracteres.md)
-    - [Datos estructurados](/01-Introduccion/06-datos-estructurados.md)
+    - [Enumeraciones](/01-Introduccion/06-enumeraciones.md)
     - [Operaciones binarias en conjuntos](/01-Introduccion/07-operaciones-binarias-para-manipular-conjuntos.md)
     - [Una calculadora NPI simple](/01-Introduccion/08-una-calculadora-npi-simple.md)
     - [Programación basada en eventos](/01-Introduccion/09-programacion-basada-en-eventos.md)
