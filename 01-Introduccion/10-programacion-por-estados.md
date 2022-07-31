@@ -163,6 +163,6 @@ En la teoría de los autómatas, un autómata que asocia salida con entradas de 
 
 > [Regresar a la página anterior](09-programacion-basada-en-eventos.md) (Programación basada en eventos)
 >
-> [Ir a la siguiente página]() (Próximamente)
+> [Ir a la siguiente página](11-verificacion-del-programa.md) (Verificación del programa)
 >
 > <sub>[Subir al principio de esta página](#una-calculadora-npi-simple)</sub>

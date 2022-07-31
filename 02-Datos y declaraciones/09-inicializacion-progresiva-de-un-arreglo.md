@@ -16,6 +16,6 @@ new d[10] = { 10, 9, ... }              /* establece: 10, 9, 8, 7, 6, 5, 4, 3, 2
 
 > [Regresar a la página anterior](08-inicializacion-de-una-variable.md) (Inicialización de una variable)
 >
-> [Ir a la página siguiente](10-inicializacion-enumerada-de-un-arreglo.md) ()
+> [Ir a la página siguiente](10-inicializacion-enumerada-de-un-arreglo.md) (Inicialización enumerada de un arreglo)
 >
 > <sub>[Subir al principio de esta página]()</sub>

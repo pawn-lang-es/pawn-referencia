@@ -11,6 +11,6 @@ en el que presenta los temas. Las partes conceptuales más amplias del lenguaje,
 
 > [Regresar a la página anterior](13-advertencias-y-errores.md) (Advertencias y errores)
 >
-> [Ir a la siguiente capítulo](../02-Datos%20y%20declaraciones/01-declaracion-de-variables-por-estado.md) (Datos y declaraciones)
+> [Ir al siguiente capítulo](../02-Datos%20y%20declaraciones/00-datos-y-declaraciones.md) (Datos y declaraciones)
 >
 > <sub>[Subir al principio de esta página](#comentarios-para-documentación)</sub>
