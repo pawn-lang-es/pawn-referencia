@@ -37,7 +37,7 @@ enum rectangle
 {
     left,
     top,
-    rigt,
+    right,
     bottom
 }
 
@@ -48,7 +48,7 @@ my_rect[top] = 5
 my_rect[right] = 30
 my_rect[bottom] = 12
 
-for (new i = 0; rectange:i < rectange; ++i)
+for (new i = 0; rectangle:i < rectangle; ++i)
     my_rect[rectangle:i] *= 2
 ```
 
