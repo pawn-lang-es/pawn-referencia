@@ -37,7 +37,7 @@ enum rectangle
 {
     left,
     top,
-    rigt,
+    right,
     bottom
 }
 
@@ -48,11 +48,11 @@ my_rect[top] = 5
 my_rect[right] = 30
 my_rect[bottom] = 12
 
-for (new i = 0; rectange:i < rectange; ++i)
+for (new i = 0; rectangle:i < rectangle; ++i)
     my_rect[rectangle:i] *= 2
 ```
 
-Después de la declaración de "my_rect" arriba, puedes acceder al segundo campo de my_rect con "my_rect[top]", pero decir "my_rect[1]" dará un diagnóstico del parser (un mensaje de advertencia o error). Un superposición de etiquetas (o un cambio de etiquetas) ajusta una función, constante o variable al nombre de la etiqueta deseada. El bucle for de las dos últimas líneas del ejemplo anterior muestra esto: la variable del bucle i es una celda simple, sin etiqueta, y debe ser convertida a la etiqueta rectángulo antes de usarla como índice en el array my_rect. Observe que la estructura enum ha creado tanto una constante como una etiqueta con el nombre "rectángulo".
+Después de la declaración de "my_rect" arriba, puedes acceder al segundo campo de my_rect con `my_rect[top]`, pero decir `my_rect[1]` hará que el analizador sintáctico emita un diagnóstico (un mensaje de advertencia o error). Un superposición de etiquetas (o un cambio de etiquetas) ajusta una función, constante o variable al nombre de la etiqueta deseada. El bucle `for` de las dos últimas líneas del ejemplo anterior muestra esto: la variable del bucle `i` es una celda simple, sin etiqueta, y debe ser convertida a la etiqueta *rectangle* antes de usarla como índice en el array `my_rect`. Observa que la enumeración ha creado tanto una constante como una etiqueta con el nombre *rectangle*.
 
 Los nombres de etiquetas introducidos hasta ahora empiezan con una letra minúscula; son etiquetas "**débiles**". Los nombres de etiquetas que comienzan con una letra mayúscula son etiquetas "**fuertes**". La diferencia entre las etiquetas débiles y las fuertes es que las etiquetas débiles pueden, en algunas circunstancias, ser eliminadas implícitamente por el analizador sintáctico de PAWN, de modo que una expresión débilmente etiquetada se convierte en una expresión no etiquetada. El mecanismo de comprobación de etiquetas verifica las siguientes situaciones:
 
